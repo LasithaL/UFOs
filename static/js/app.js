@@ -16,9 +16,9 @@ function buildTable(data) {
         // Append a row tot he table body
         let row = tbody.append("tr");
 
-        // Loop through each field in the datRow and add
+        // Loop through each field in the dataRow and add
         // each value as atable cell (td)
-        Object.values(datRow).forEach((val) => {
+        Object.values(dataRow).forEach((val) => {
             let cell = row.append("td");
             cell.text(val);
             }
@@ -27,7 +27,7 @@ function buildTable(data) {
 }
 
 function handleClick() {
-    // Grab the datetime function form the flter
+    // Grab the datetime function form the filter
     let date = d3.select("#datetime").property("value");
     let filteredData = tableData;
     
@@ -41,11 +41,11 @@ function handleClick() {
     // Rebuild the table using the filtered data
     // @NOTE: If no date was entered, then filteredData will
     // just be the original tableData.
-    buildTable(filtereData);
+    buildTable(filteredData);
 };
 
 // Attache an event to listen for the form button
-d3.selectAll("fiter-btn").on("click", handleClick);
+d3.selectAll("#fiter-btn").on("click", handleClick);
 
 // Build the table when the page loads
 buildTable(tableData)
