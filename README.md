@@ -52,7 +52,7 @@ Filtering By City
 ![City_Filter](static/images/city_filter.png)
 
 Compound Filters
-![Compound_Filters](static/images/compound_filter.png)
+![Compound_Filters](static/images/compund_filter.png)
 
 Bad Filter => This filter includes a City filter value of 'Naples'. If you look at Compound FIlter example you see that the city 'Naples' is listed as 'naples' in the dataset. The filters are case sensitive. Therefore, the filter value of 'Naples' resulted in zero items being returned.
 ![Bad_Filter](static/images/bad_filter.png)
