@@ -12,7 +12,7 @@ Given a dataset that contains UFO sightings that included Date of Sighting, City
 ### Process
 ***Page Layout:***
 
-![Reload_Reset_Page](static/images/page_layout.PNG)
+![Reload_Reset_Page](static/images/page_layout.png)
 
 The page layout for the UFO Sightings is displayed above.
 - Page Navigation - Yellow Outline
