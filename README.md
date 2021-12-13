@@ -46,16 +46,16 @@ The user may enter criteria for any number of fields and the data will be filter
 
 #### Filter Examples
 Filtering By Date
-![Date_Filter](static/images/date_filter.PNG)
+![Date_Filter](static/images/date_filter.png)
 
 Filtering By City
-![City_Filter](static/images/city_filter.PNG)
+![City_Filter](static/images/city_filter.png)
 
 Compound Filters
-![Compound_Filters](static/images/compound_filter.PNG)
+![Compound_Filters](static/images/compound_filter.png)
 
 Bad Filter => This filter includes a City filter value of 'Naples'. If you look at Compound FIlter example you see that the city 'Naples' is listed as 'naples' in the dataset. The filters are case sensitive. Therefore, the filter value of 'Naples' resulted in zero items being returned.
-![Bad_Filter](static/images/bad_filter.PNG)
+![Bad_Filter](static/images/bad_filter.png)
 
 
 ## Summary
@@ -67,7 +67,7 @@ Bad Filter => This filter includes a City filter value of 'Naples'. If you look 
 ### Recommendations for the Future
 - The current filter fields are all text input fields. For a future revision, these filter boxes can be replaced with dropdown filters that are pre-populated with the information that is within the datase. For example, the the _Enter State_ field and carry the two letter state id of all states that are within the datase.
 In the image below, the city field is populated with what seems to be 'san diego'. But in reality, the left filter entry is 'san diego ' with an accidental space after the city name. This in return produced an empty data table.
-![Reccomendation](static/images/reccomendation.PNG)
+![Reccomendation](static/images/reccomendation.png)
 
 - In combination with the above reccomendation, for further ease of use the filter dropdowns can be linked where when a filter value is selected the rest of the dropdowns adjust the available values according to the selected filters. As an example, if the user selects the state to be 'ca' (California), then the rest of the filters will adjust their values to only show the relavent values to the rows where state = 'ca'.
 - There also can be some consideration made for case sensitivity. It is natural for a user to enter 'CA' or "San Diego' in place of 'ca' or 'san diego'. The code can be adjusted to set the filter values to all UPPER or LOWER case and then match the dataset valses as UPPER or LOWER case letters.
